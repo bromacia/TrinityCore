@@ -1300,10 +1300,7 @@ void AddBattlegroundScripts()
 	void AddSC_Duel_Reset();
 	void AddSC_npc_info();
 	void AddSC_skill_npc();
-
-
-
-	
+	void AddSC_vipcommands()	
 #endif
 
 void AddCustomScripts()
@@ -1320,9 +1317,7 @@ void AddCustomScripts()
 	AddSC_Duel_Reset();
 	AddSC_npc_info();
 	void AddSC_skill_npc();
-	
-
-	
+	void AddSC_vipcommands()	
 #endif
 
 }
