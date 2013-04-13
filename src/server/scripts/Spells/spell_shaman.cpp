@@ -302,16 +302,13 @@ class spell_sha_earth_shield : public SpellScriptLoader
                 }
             }
 
-            void HandleProc(AuraEffect const* aurEff, ProcEventInfo& /*eventInfo*/)
             bool CheckProc(ProcEventInfo& /*eventInfo*/)
             {
-                PreventDefaultAction();
 
                 //! HACK due to currenct proc system implementation
                 if (Player* player = GetTarget()->ToPlayer())
                     if (player->HasSpellCooldown(SPELL_SHAMAN_EARTH_SHIELD_HEAL))
                         return;
-                        return false;
                     return true;
             }
             
